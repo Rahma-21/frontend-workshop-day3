@@ -1,14 +1,28 @@
 // =============================================
 // 1. FUNCTIONS — STRETCH: Leap year
 // =============================================
-// Write isLeapYear(year). A year is leap if:
+// Write isLeapYear(year). A year is leap (cintains 366 day) if:
 //   divisible by 4 AND not divisible by 100, OR divisible by 400
 //
 // The checks at the bottom print ✅ when your function is correct.
 
 function isLeapYear(year) {
-  // your code here
+  if (year % 4 === 0 && year % 100 !=0){
+    return true
+  }
+  if (year % 400 === 0){
+    return true
+  }
+  else {return false}
 }
+
+// another sloutins
+// function isLeapYear(year) {
+//  if ((year % 4 === 0 && year % 100 !=0) || year % 400){
+//     return true
+//   }
+//     else {return false}
+//  }
 
 // ----- Checks (do not edit) -----
 check("isLeapYear(2024)", () => isLeapYear(2024), true);

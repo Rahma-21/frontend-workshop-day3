@@ -7,10 +7,16 @@
 // The checks at the bottom print ✅ when your function is correct.
 
 function isEven(n) {
-  // your code here
+  if(n % 2 === 0) {
+    return true
+
+  }
+  else {return false}
 }
 
 // ----- Checks (do not edit) -----
 check("isEven(4)", () => isEven(4), true);
 check("isEven(7)", () => isEven(7), false);
 check("isEven(0)", () => isEven(0), true);
+
+

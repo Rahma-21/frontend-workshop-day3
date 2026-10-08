@@ -11,6 +11,9 @@
 // argument  -> the real value you pass when you call it (2, 3)
 // return    -> sends a value BACK to where the function was called
 
+// we use function if we have repated code 
+// the name of the funaction must be meaingfull - desi what is insied the the body of functiotn
+
 // 1. A function without parameters
 function sayHi() {
   console.log("Hi!");
@@ -42,8 +45,11 @@ console.log(b);         // 10 — we can use this value
 function checkAge(age) {
   if (age >= 18) {
     return "Adult";
+
+    // some code below will never run afrer return
   }
   return "Minor"; // only reached when age < 18
+  // some code below will never run afrer return
 }
 console.log(checkAge(25));
 console.log(checkAge(12));

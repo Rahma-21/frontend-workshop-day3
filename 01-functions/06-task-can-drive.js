@@ -7,7 +7,9 @@
 // The checks at the bottom print ✅ when your function is correct.
 
 function canDrive(age, hasLicense) {
-  // your code here
+  if (age >= 18 && hasLicense === true ){return true;}
+  else {return false;}
+   
 }
 
 // ----- Checks (do not edit) -----
