@@ -10,7 +10,10 @@
 // The checks at the bottom print ✅ when your function is correct.
 
 function fizzBuzz(n) {
-  // your code here
+  if (n % 3 === 0 && n% 5 === 0) {return "FizzBuzz";}
+  else if (n % 3 == 0 ) {return "Fizz";}
+  else if (n % 5 == 0 ) {return "Buzz";}
+  else {return `${n}`; }
 }
 
 // ----- Checks (do not edit) -----
@@ -18,3 +21,9 @@ check("fizzBuzz(15)", () => fizzBuzz(15), "FizzBuzz");
 check("fizzBuzz(9)", () => fizzBuzz(9), "Fizz");
 check("fizzBuzz(10)", () => fizzBuzz(10), "Buzz");
 check("fizzBuzz(7)", () => fizzBuzz(7), "7");
+
+
+  // if (i % 3 === 0 && i% 5 === 0) {console.log("FizzBuzz")}
+  //   else if (i % 3 == 0 ) {console.log("Fizz")}
+  //   else if (i % 5 == 0 ) {console.log("Buzz")}
+  //   else {console.log(i) }
